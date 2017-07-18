@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+        <title>PaaS平台</title>
+    </head>
+    <body>
+        <div id="app"></div>
+        <!-- built files will be auto injected -->
+    </body>
+</html>
+<script type="text/javascript">
+    // 保存token信息
+    if (location.hash.indexOf('access_token') > 0) {
+        var hash = location.hash.slice(2);
+        var query = hash.split('&');
+        var loginInfo = {};
+        for (var i = 0; i < query.length; i++) {
+            loginInfo[query[i].split('=')[0]] = query[i].split('=')[1];
+        };
+        localStorage.token = loginInfo.access_token;
+        window.location.href = decodeURIComponent(loginInfo.state);
+    }
+</script>

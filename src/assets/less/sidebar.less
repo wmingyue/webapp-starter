@@ -1,0 +1,100 @@
+aside{
+    position: fixed;
+    top: 40px;
+    left: 0;
+    height: 100%;
+    width: 180px;
+    background: #2C2B2B;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.50);
+    .list{
+        .first-menu{
+            display: block;
+            height: 48px;
+            line-height: 48px;
+            font-size: 14px;
+            cursor: pointer;
+            background-color: #171717;
+            color: #9B9B9B;
+            div{
+                width: 130px;
+                margin: 0 auto;
+                span{
+                    display: inline-block;
+                    text-align: left;
+                    margin-left: 10px;
+                }
+            }
+            &:hover{
+                color: #fff;
+            }
+        }
+        .sub-active{
+            background-color: #4982F6!important;
+            color: #fff!important;
+            &:hover{
+                color: #fff;
+            }
+        }
+        section{
+            .menu{
+                position: relative;
+                display: block;
+                height: 48px;
+                line-height: 48px;
+                font-size: 14px;
+                cursor: pointer;
+                background-color: #171717;
+                color: #9B9B9B;
+                transition: transform 3s ease-out;
+                p{
+                    width: 130px;
+                    margin: 0 auto;
+                    .a-link{
+                        font-size: 14px;
+                        text-align: left;
+                        margin-left: 10px;
+                    }
+                }
+                .arrows{
+                    position: absolute;
+                    right: 15px;
+                    top: 2px;
+                    font-size: 12px;
+                    transform:scale(0.8);
+                }
+                &:hover{
+                    color: #fff;
+                }
+            }
+            .active{
+                color: #fff;
+                .arrows{
+                    font-size: 12px;
+                    transform: rotate(90deg) scale(0.9);
+                }
+            }
+            .sub-menu{
+                display: block;
+                height: 36px;
+                line-height: 36px;
+                font-size: 12px;
+                box-sizing: border-box;
+                color: #9B9B9B;
+                background-color: #333;
+                cursor: pointer;
+                div{
+                    width: 130px;
+                    margin: 0 auto;
+                    span{
+                        display: inline-block;
+                        text-align: left;
+                        margin-left: 10px;
+                    }
+                }
+                &:hover{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
