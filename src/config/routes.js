@@ -18,15 +18,6 @@ const routes = [
         }
     },
     {
-        path: '/template',
-        name: 'templateIndex',
-        component(resolve) {
-            require.ensure(['../components/template/index.vue'], () => {
-                resolve(require('../components/template/index.vue'));
-            });
-        }
-    },
-    {
         path: '/controller',
         name: 'controller',
         component(resolve) {

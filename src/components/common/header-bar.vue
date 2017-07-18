@@ -2,11 +2,10 @@
     <header>
         <div class="logo" :class="{'side-header': path === 'template' || path === 'controller'}">
             <i class="iconfont">&#xe624;</i>
-            <span class="jiyun">寄云云应用开发平台</span>
+            <span class="jiyun">webapp-starter</span>
         </div>
         <div class="tabs">
             <router-link class="link" :to="{name: 'introduction'}" :class="{'active': path === 'home' || path === ''}">产品介绍</router-link>
-            <router-link class="link" :to="{name: 'templateIndex'}" :class="{'active': path === 'template'}">应用模板</router-link>
             <router-link class="link" :to="{name: 'controllerList'}" :class="{'active': path === 'controller'}">控制台</router-link>
             <a v-show="!getUser.userName" class="link" @click="handleCommand('login-in')">登录</a>
             <a v-show="!getUser.userName" class="link" @click="handleCommand('register')">注册</a>

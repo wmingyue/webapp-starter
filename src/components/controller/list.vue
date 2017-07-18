@@ -1,10 +1,10 @@
 <template>
-    <div>
+    <div class="list">
         列表页
     </div>
 </template>
 <style lang="less">
-    div{
+    .list {
         margin-top: 30px;
         text-align: center;
         font-size: 20px;

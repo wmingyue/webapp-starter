@@ -1,11 +1,11 @@
 <template>
-    <div>
+    <div class="intro">
         产品介绍页
     </div>
 </template>
 <style lang="less" scoped>
-    div{
-        margin-top: 30px;
+    .intro {
+        margin-top: 60px;
         text-align: center;
         font-size: 20px;
     }

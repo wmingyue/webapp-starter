@@ -1,6 +1,6 @@
-# paas_platform
+# webapp-starter
 
-> A paas platform project
+> A webapp-starter project
 
 ## Build Setup
 
