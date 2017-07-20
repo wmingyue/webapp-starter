@@ -119,7 +119,7 @@
             getname() {
                 $.ajax({
                     type: 'get',
-                    url: 'http://apigw.test.neucloud.cn/user/info',
+                    url: loginConfig['host'] + '/api/user/info',
                     loading: true,
                     success: (res) => {
                         this.$store.dispatch('user', res.account);
@@ -139,7 +139,7 @@
                         this.$store.dispatch('user', '');
                         window.localStorage.removeItem('userName');
                         window.localStorage.removeItem('token');
-                        window.location.href = 'http://uaa-neucloud.test.neucloud.cn';
+                        window.location.href = loginConfig['host'] + '/api/logout?redirect=' + encodeURIComponent(window.location.href);
                         break;
                     default:
                         break;
